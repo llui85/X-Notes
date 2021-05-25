@@ -153,6 +153,8 @@
 			}
 		}
 		if($action == "delete-note") {
+			echo "Sorry, deleting notes has been disabled.";
+			/*
 			$file = "../files/" . $_POST['file'];
 			$bypass = $_POST['bypass'];
 			if($bypass) {
@@ -183,6 +185,7 @@
 					}
 				}
 			}
+			*/
 		}
 		if($action == "lock-note") {
 			include "./aes.php";
