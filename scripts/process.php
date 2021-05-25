@@ -370,7 +370,8 @@
 			}
 		}
 		if($action == "change-password") {
-			if(!empty($_POST['current_password']) && !empty($_POST['new_password'])) {
+			echo "Password changing has been disabled. Sorry!";
+			if("hi" === "bye" && !empty($_POST['current_password']) && !empty($_POST['new_password'])) {
 				$posted_current_password = $_POST['current_password'];
 				$posted_new_password = $_POST['new_password'];
 				if(password_verify($posted_current_password, $valid_password)) {
@@ -385,7 +386,7 @@
 				}
 			}
 			else {
-				echo "Please fill out all fields.";
+				// echo "Please fill out all fields.";
 			}
 		}
 		if($action == "delete-all-notes") {
